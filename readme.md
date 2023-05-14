@@ -1,4 +1,4 @@
-###Offline Training Front-End Web Developer IDCamp X Kadin 13-14 Mei 2023
+### Offline Training Front-End Web Developer IDCamp X Kadin 13-14 Mei 2023
 
 Trainer: 
 - Nur Rizki Adi ( Adi ) - Curriculum Developer Dicoding
@@ -6,15 +6,15 @@ Trainer:
 - Dimas Maulana Dwi Saputra ( Dimas ) - Curriculum Developer Dicoding
 
 links
-- [How to - Hari 1](http://dicoding.id/frontend-KADIN)
+- [How to](http://dicoding.id/frontend-KADIN)
 
-#####Responsive Design
-######1. Micro Layout
+##### Responsive Design
+###### 1. Micro Layout
 Berfokus pada item dalam component
-######2. Macro Layout
+###### 2. Macro Layout
 Lebih Berfokus pada layout
 
-####Pengenalan PWA & Teori Application Shell
+#### Pengenalan PWA & Teori Application Shell
 by Nur Rizqi Adi
 Kelebihan
 - Dapat diintall seperti "Native App"
@@ -22,24 +22,24 @@ Kelebihan
 - Terintregrasi Dengan Semua OS
 - Bisa diakses offline
 
-####Komponen pembentuk PWA
-#####1. Komponent Inti
+#### Komponen pembentuk PWA
+##### 1. Komponent Inti
 - Application Shell
 - Web App Manifest
 - Service Worker
-#####2. Pendukung
+##### 2. Pendukung
 - Cache API
 - Fetch API
 - IndexedDB: Database yg ada di client ( browser )
 - Dsb.
 
-#####Application Shell
+##### Application Shell
 - App Shell memisahkan antara base UI dengan content
 - Base UI akan di-cache biar bisa diakses offline
 
-#####Install Capability
+##### Install Capability
 by Dimas Maulana
-######Installaction Criteria
+###### Installaction Criteria
 - Secure web ( https )
 - Web App Manifest
 - Icon ( Di dalem manifest )
@@ -59,24 +59,24 @@ by Dimas Maulana
 `<link rel="apple-touch-icon" sizes="180x180" href="icon.png" >`
 - [manifest generator](https://manifest-gen.netlify.app/)
 
-#####Offline Capability
+##### Offline Capability
 by Nur Rizki Adi
-######Service Worker
+###### Service Worker
 - Salah satu bagian dari Web Worker yg membuat background service sebagai midleware antara browser dan server
 - push notifications
 - service worker tidak bisa akses DOM, karena terpisah dari main thread
 
-######Service Worker Registration
+###### Service Worker Registration
 ```
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register("/serviceworker.js");
 }
 ```
 
-######Workbox
+###### Workbox
 - workbox adalah tool yg menyederhanakan routing dan caching di service worker
 
-#####[Native Capabilities](https://whatwebcando.today/)
+##### [Native Capabilities](https://whatwebcando.today/)
 by Dimas Maulana
 
 Jenis Storage browser
@@ -111,7 +111,7 @@ Push Notification
 - pengguna tidak perlu membuka web untuk mendapatkan notifikasi
 - agar dapat menerima push message, identitas pengguna perlu didaftarkan ke web push service provider sebagai target
 
-#####Extended Feature on Web Apps
+##### Extended Feature on Web Apps
 by Rizqy Hidayat
 - Geolocation API
 Mendapatkan latlng dari user
