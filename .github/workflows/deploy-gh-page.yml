@@ -28,6 +28,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: update manifest scope
+        run: |
+          mv ./src/public/app.webmanifest ./src/public/app.webmanifest.bak
+          mv ./src/public/githubpages.webmanifest ./src/public/app.webmanifest
       - name: Checkout
         uses: actions/checkout@v3
       - name: Set up Node
